@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Satellite Orbit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="isro-logo">
+                    <img class="isro-logo" src="data:image/png;base64,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" alt="">
+                </div>
+                <div>
+                    <h1>Satellite Orbit Tracker</h1>
+                    <p class="subtitle">Indian Space Research Organisation</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-grid">
+            <div class="panel">
+                <h3>🛰 Orbit Calculator</h3>
+                <div class="form-group">
+                    <label for="satellite">Select Satellite:</label>
+                    <select id="satellite">
+                        <option style="color: black;" value="cartosat">Cartosat-3</option>
+                        <option style="color: black;" value="resourcesat">ResourceSat-2A</option>
+                        <option style="color: black;" value="insat">INSAT-3DR</option>
+                        <option style="color: black;" value="astrosat">AstroSat</option>
+                        <option style="color: black;" value="mangalyaan">Mars Orbiter Mission</option>
+                        <option style="color: black;" value="chandrayaan">Chandrayaan-3</option>
+                        <option style="color: black;" value="custom">Custom Satellite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="altitude">Altitude (km):</label>
+                    <input type="number" id="altitude" value="500" min="200" max="36000">
+                </div>
+
+                <div class="form-group">
+                    <label for="inclination">Inclination (degrees):</label>
+                    <input type="number" id="inclination" value="98.5" min="0" max="180" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="eccentricity">Eccentricity:</label>
+                    <input type="number" id="eccentricity" value="0.001" min="0" max="0.99" step="0.001">
+                </div>
+
+                <button onclick="calculateOrbit()">Calculate Orbit</button>
+                <button onclick="startTracking()">Start Tracking</button>
+            </div>
+
+            <div class="panel">
+                <h3>🌍 Orbital Visualization</h3>
+                <div class="orbit-canvas" id="orbitCanvas">
+                    <div class="earth"></div>
+                    <div class="orbit-path" id="orbitPath"></div>
+                    <div class="satellite" id="satellite1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>📊 Orbital Parameters</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-value" id="orbitalPeriod">--</div>
+                    <div class="info-label">Orbital Period (min)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="orbitalVelocity">--</div>
+                    <div class="info-label">Orbital Velocity (km/s)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="apogee">--</div>
+                    <div class="info-label">Apogee (km)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="perigee">--</div>
+                    <div class="info-label">Perigee (km)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="groundTrack">--</div>
+                    <div class="info-label">Ground Track Shift (km)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="currentPosition">--</div>
+                    <div class="info-label">Current Altitude (km)</div>
+                </div>
+
+                <!-- ✅ NEW Latitude & Longitude Cards -->
+                <div class="info-card">
+                    <div class="info-value" id="currentLat">--</div>
+                    <div class="info-label">Latitude (°)</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-value" id="currentLon">--</div>
+                    <div class="info-label">Longitude (°)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h3>🚀 ISRO Missions Database</h3>
+            <div class="mission-list">
+                <div class="mission-item" onclick="loadMission('cartosat')">
+                    <div class="mission-name">Cartosat-3</div>
+                    <div class="mission-details">Earth observation satellite • 509 km altitude • Sun-synchronous orbit</div>
+                </div>
+                <div class="mission-item" onclick="loadMission('chandrayaan')">
+                    <div class="mission-name">Chandrayaan-3</div>
+                    <div class="mission-details">Lunar mission • Successful soft landing • South pole exploration</div>
+                </div>
+                <div class="mission-item" onclick="loadMission('mangalyaan')">
+                    <div class="mission-name">Mars Orbiter Mission (MOM)</div>
+                    <div class="mission-details">Mars exploration • 499 km altitude • Highly elliptical orbit</div>
+                </div>
+                <div class="mission-item" onclick="loadMission('astrosat')">
+                    <div class="mission-name">AstroSat</div>
+                    <div class="mission-details">Multi-wavelength astronomy • 650 km altitude • Near-equatorial orbit</div>
+                </div>
+                <div class="mission-item" onclick="loadMission('resourcesat')">
+                    <div class="mission-name">ResourceSat-2A</div>
+                    <div class="mission-details">Earth observation • 817 km altitude • Sun-synchronous orbit</div>
+                </div>
+                <div class="mission-item" onclick="loadMission('insat')">
+                    <div class="mission-name">INSAT-3DR</div>
+                    <div class="mission-details">Weather monitoring • Geostationary orbit • 35,786 km altitude</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
